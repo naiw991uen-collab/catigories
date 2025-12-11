@@ -1,0 +1,34 @@
+<div class="register-container">
+  <form class="register-form" [formGroup]="registerForm" (ngSubmit)="SubmitData()">
+    <h2 class="text-center mb-4">🐾 CatHub Register</h2>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" class="form-control" formControlName="fname" placeholder="Enter First Name">
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name :</label>
+        <input type="text" id="lname" class="form-control" formControlName="lname" placeholder="Enter Last Name">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="age">Age :</label>
+        <input type="number" id="age" class="form-control" formControlName="age" placeholder="Enter Age">
+      </div>
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" class="form-control" formControlName="email" placeholder="Enter Email">
+      </div>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="password">Password :</label>
+      <input type="password" id="password" class="form-control" formControlName="password" placeholder="Enter Password">
+    </div>
+
+    <button type="submit" class="btn btn-register mt-4 w-100" [class.btn-pressed]="btnPressed">Register</button>
+  </form>
+</div>

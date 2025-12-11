@@ -1,0 +1,69 @@
+/* خلفية الصفحة */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  animation: bgFade 2s ease-in-out;
+}
+
+/* الانيمشن للخلفية */
+@keyframes bgFade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* الفورم */
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 400px;
+  animation: formFade 1s ease-in-out;
+}
+
+/* انيمشن للفورم */
+@keyframes formFade {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* العنوان */
+.login-form h2 {
+  color: #6a11cb;
+  font-weight: bold;
+}
+
+/* حقول الادخال */
+.login-form input.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.login-form input.form-control:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 10px rgba(106,17,203,0.3);
+  outline: none;
+}
+
+/* زر الدخول */
+.btn-login {
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* نفس gradient الناف بار */
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  color: white;
+}

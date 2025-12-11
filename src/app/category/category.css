@@ -1,0 +1,15 @@
+.btn-cat {
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* نفس gradient الناف بار */
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-cat:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  color: white;
+}

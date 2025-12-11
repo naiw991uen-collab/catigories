@@ -1,0 +1,25 @@
+<div class="container-fluid bg-light vh-100">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 p-5">
+        <img [src]="singleProduct.images[0]" alt="" class="w-100">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 p-5">
+      <h2>{{singleProduct.title}}</h2>
+      <h3>{{singleProduct.price}} $ + Free Shipping</h3>
+      <p>{{singleProduct.description}}</p>
+
+      <!-- 🛒 عداد الكارت -->
+     <div class="cart-status mb-3 position-relative">
+  <button class="btn btn-warning position-relative cart-button">
+    🛒 Cart
+    <span class="badge bg-danger cart-badge">{{ cartCount() }}</span>
+  </button>
+</div>
+
+      <input type="number" [(ngModel)]="amount" class="form-control w-25 mb-3" min="1"><br>
+
+      <button class="btn btn-cat-success me-2" (click)="addToCart()">Add To Cart</button>
+      <button class="btn btn-cat-danger" (click)="removeFromCart()">Remove From Cart</button>
+    </div>
+  </div>
+</div>

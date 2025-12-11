@@ -1,0 +1,95 @@
+/* خلفية الصفحة */
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  animation: bgFade 2s ease-in-out;
+}
+
+@keyframes bgFade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* الفورم */
+.register-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 500px;
+  animation: formFade 1s ease-in-out;
+}
+
+@keyframes formFade {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* العنوان */
+.register-form h2 {
+  color: #6a11cb;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* صفوف الفورم 2x2 */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* عمودين متساويين */
+  gap: 15px; /* مسافة بين الحقول */
+  margin-bottom: 15px;
+}
+
+/* الحقول الفردية */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* الحقول التي تأخذ العرض الكامل */
+.form-group.full-width {
+  grid-column: span 2; /* تمتد عبر العمودين */
+}
+
+/* حقول الإدخال */
+.register-form input.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.register-form input.form-control:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 10px rgba(106,17,203,0.3);
+  outline: none;
+}
+
+/* زر Register */
+.btn-register {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-register:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  color: white;
+}
+
+/* تأثير الضغط على الزر */
+.btn-pressed {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}

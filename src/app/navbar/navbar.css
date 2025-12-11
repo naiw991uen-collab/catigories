@@ -1,0 +1,35 @@
+/* Navbar background with gradient and shadow */
+.navbar-cat {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Links styling */
+.nav-link-custom {
+  color: rgba(255,255,255,0.9);
+  padding: 8px 15px;
+  margin: 2px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-link-custom:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  text-decoration: none;
+}
+
+/* Active link style */
+.active-link {
+  background-color: white !important;
+  color: #2575fc !important;
+  border-radius: 5px;
+}
+
+/* Optional: button hover effect */
+.btn-outline-light:hover {
+  background-color: white;
+  color: #2575fc;
+  border-color: white;
+}
